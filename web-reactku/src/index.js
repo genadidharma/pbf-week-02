@@ -2,14 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import cat from './cat.jpg';
 import reportWebVitals from './reportWebVitals';
 
 const Hello = () => {
   return <p>Hello</p>
 }
 
+const Cat = () => {
+  return <img src={cat} alt='Cat'/>
+}
+
 ReactDOM.render(
-  <Hello/>,
+  <div>
+      <Hello/>,
+      <Cat/>,
+  </div>,
   document.getElementById('root')
 );
 
